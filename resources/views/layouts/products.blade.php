@@ -12,6 +12,7 @@
     <div class="container mx-auto py-5">
         <div class="text-right mb-3">
             <a href="{{ route('posts.index') }}" class="btn btn-primary">Halaman Admin</a>
+            <a href="{{ route('merchant.index') }}" class="btn btn-secondary">Halaman Merchant</a>
         </div>
         <h2 class="text-center font-bold text-2xl">PRODUCTS</h2>
         <div class="bg-blue-100 rounded p-4">
