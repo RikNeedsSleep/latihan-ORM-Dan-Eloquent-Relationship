@@ -1,10 +1,9 @@
 
-
 <?php
 
 use App\Http\Controllers\PostController;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\TambahProdukController;
+
 
 Route::get('posts', [PostController::class, 'index'])->name('posts.index');
 Route::get('posts/create', [PostController::class, 'create'])->name('posts.create');
@@ -14,3 +13,9 @@ Route::put('posts/{id}/update', [PostController::class, 'update'])->name('posts.
 Route::delete('posts/{id}/destroy', [PostController::class, 'delete'])->name('posts.destroy');
 Route::get('/products', [PostController::class, 'tampilkanHalamanProduk'])->name('products');
 Route::get('/show-all-products', [PostController::class, 'showAllProducts'])->name('products');
+Route::get('posts/merchant', [PostController::class, 'merchant'])->name('merchant');
+Route::get('posts/profile', [PostController::class, 'showProfile'])->name('profile');
+
+
+
+
